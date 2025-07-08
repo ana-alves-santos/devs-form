@@ -2,9 +2,9 @@
 
 A responsive developer registration form created as a study project
 
-<p align="center">
+<p align="">
   <a href="https://ana-alves-santos.github.io/Devs-Form/"target="_blank">
-    🚀 testing
+   testing
   </a>
 </p>
 
@@ -28,9 +28,6 @@ A responsive developer registration form created as a study project
 ## 🖼️ Layout Preview
 
 <p align="center">
-  <img alt="Layout View" src="assets/image_back.png" width="80%">
+  <img alt="Layout View" src="assets/preview.png" width="80%">
 </p>
 
-<p align="center">
-  <img alt="Layout View" src="assets/image_front.png" width="80%">
-</p>
