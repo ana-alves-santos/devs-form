@@ -1,131 +1,123 @@
-/* Todos os elementos da página */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Elementos com o ID "titulo" */
-#titulo {
-    font-family: sans-serif;
-    color: #380B61;
-    margin-left: 7%;
-} 
-
-/* Elementos com o ID "subtitulo" */
-#subtitulo {
-    font-family: sans-serif;
-    color: #380B61;
-    margin-left: 10%;
-} 
-
-#check{
-    display: inline-block;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Elementos de tag <fieldset>*/
-fieldset {
-    border: 0;
+
+.background-shapes .shape {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #4CAF50, #2e7d32);
+  opacity: 0.2;
 }
 
-/* Elemento de tag <body> */
-body{
-    background-color: #F0F8FF;
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #59429d;
-    padding: 20px;
-    max-width: 800px;
-    margin-bottom: 10px;
+.shape1 {
+  width: 250px;
+  height: 250px;
+  top: -50px;
+  left: -100px;
 }
 
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea, button {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #59429d;
-    border-radius: 5px;
+.shape2 {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  right: -80px;
 }
 
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before, .grupo:after {
-    display: table;
+.shape3 {
+  width: 180px;
+  height: 180px;
+  top: 60px;
+  right: -50px;
 }
 
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
-    clear: both;
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  z-index: 10;
+  position: relative;
 }
 
-/* Elementos de classe "campo" */
-.campo {
-    margin-bottom: 1em;
+.form-container h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
 }
 
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
-    margin-bottom: 0.2em;
-    color: #59429d;
-    display: block;
+.form-group {
+  margin-bottom: 1rem;
 }
 
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
+.form-group select {
+  margin-top: 0.5rem; 
 }
 
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
-    padding: 0.2em;
-    border: 1px solid #59429d;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+  outline: none;
 }
 
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
-    padding-right: 1em;
+textarea {
+  resize: vertical;
+  height: 100px;
 }
 
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
-/* Elemento de classe "botao" */
-.botao {
-    font-size: 1.2em;
-    background: #59429d;
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.95em;
 }
 
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.botao:hover {
-    background: #CCBBFF;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
+button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
 }
 
-/* Elementos de classe botão e de tag <select> */
-.botao, select{
-    cursor: pointer;
+button[type="submit"]:hover {
+  background-color: #388e3c;
 }
 
-@media (min-width: 768px) {
-   .campo input[type="text"]
-   .campo input[type="text"]
-   .campo select
-   .campo textarea {
-    width: 50px;
-   }
-
-   .botao{
-    width: auto;
-   }
-}
