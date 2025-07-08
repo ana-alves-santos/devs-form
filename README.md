@@ -16,8 +16,7 @@ A responsive developer registration form created as a study project
 - ✅ Seniority dropdown  
 - ✅ Technology checkboxes  
 - ✅ Experience text area  
-- ✅ Responsive layout  
-- ✅ Success message after form submission  
+- ✅ Responsive layout    
 
 ## 🛠 Technologies
 
