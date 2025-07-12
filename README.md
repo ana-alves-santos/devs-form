@@ -1,9 +1,9 @@
-# DEV Registration Form
+# DEVs Registration Form
 
 A responsive developer registration form created as a study project
 
 <p align="">
-  <a href="https://ana-alves-santos.github.io/Devs-Form/"target="_blank">
+  <a href="https://ana-alves-santos.github.io/devs-form/"target="_blank">
    testing
   </a>
 </p>
